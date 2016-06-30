@@ -19,11 +19,9 @@ public class App {
 
 		// while loop==> loops till userInput equals zero
 		while (userInput != 0) {
-			remainder = userInput % 10; /* to get the last number we get the remainder by using the modular(%),
-										   and append it to the reversed*/
+			remainder = userInput % 10; // to get the last number we get the remainder by using the modular(%), and append it to the reversed
 			userInput = userInput / 10; // to shrink by one digit, divide by 10
-			reversed = reversed * 10 + remainder;/*shifting the number by one digit(adding zero) 
-													and add the remainder to get the reversed*/
+			reversed = reversed * 10 + remainder;//shifting the number by one digit(adding zero) and add the remainder to get the reversed
 		}
 
 		System.out.println("Reversed number is : " + reversed);
